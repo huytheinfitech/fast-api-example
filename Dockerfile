@@ -14,7 +14,6 @@ RUN pip install fastapi uvicorn[standard] python-multipart aiofiles databases ai
 WORKDIR /home/app
 COPY . ./
 
-ENTRYPOINT /bin/sh -c
 CMD uvicorn server:app --host 0.0.0.0
 
-EXPOSE 5000
+EXPOSE 8000
