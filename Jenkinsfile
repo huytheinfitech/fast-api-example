@@ -11,7 +11,7 @@ pipeline {
        stage('Build') {
            steps {
                echo 'Building..'
-               sh '/usr/local/bin/docker image build -t $IMAGE_NAME .'
+               sh 'docker image build -t $IMAGE_NAME .'
            }
        }
        stage('Deploy') {
